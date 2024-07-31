@@ -4,6 +4,9 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Isso é uma thread main");
 
-        Thread.sleep(50000);
+        Thread threadPrint = new Thread(new TarefaImprime("Boa noite Threads"), "Thread Imprime");
+        threadPrint.start();
+
+        Thread.sleep(20000);
     }
 }
