@@ -1,4 +1,4 @@
-package threads;
+package threads.aula1;
 
 public class TarefaImprime implements Runnable{
 
